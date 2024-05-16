@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NTMC MFA</title>
+  <link href="styles/fonts.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/styles/style.css">
+  <link rel="icon" type="image/png" href="/logo.png">
+</head>
+<body id="dash-body" >
+  <div id="heading">
+     <h1 id="title-dash"><span id="title-span-dash">Quote Boat (Alpha 1.0.0)</span></h1>
+     <div id="user-dash">
+        <h3 id="username"></h3>
+        <a href="/logout" class="user-action">Logout</a>
+        <button onclick="showDeleteUser()" id="delete-user-first" >Delete User</button>
+        <div id="delete-user-con"style="display:none">
+           <br>
+           <span>Confirm Delete User:</span>
+           <a href="/deleteUser" id="delete-user" >Delete User</a>
+           <button onclick="hideDeleteUser()" id="delete-user-cancel" >Cancel</button>
+        </div>
+     </div>
+  </div>
+  <div id="outerouter-ui-dash">
+  <div id="outer-ui-dash">
+  <div id="ui">
+     <div id="quote-con">
+       <p id="app-info">Welcome to Quote Boat. Quote Boat is an example application for the StrongKey FIDO2 Tutorial. The purpose of this application is to allow salespeople to reliably generate sequential sales quote identifiers and easily manage sales quote locations. </p>
+
+        <form action="/addQuote" method="post" id="quoteform">
+<div id="quote-form-con">
+            <div id="quote-quote-con">
+            <div id="quote-label-con">
+               Quote:
+             </div>
+             <div id="quote-input-con">
+           <input type="text" name="name" id="quote-input">
+         </div>
+       </div>
+
+           <div id="quote-filepath-con">
+             <div id="filepath-label-con">
+               Filepath:
+             </div>
+             <div id="filepath-input-con">
+           <input type="text" name="filepath" id="filepath-input">
+         </div>
+         <div id="quote-button-con">
+            <button type="submit" form="quoteform" value="Submit" id="quote-button">Add</button>
+          </div>
+        </div>
+
+   </div>
+        </form>
+        <div>
+           <table id="quotelist" cellspacing="0" cellpadding="0">
+             <tr>
+               <th >
+                 <span class='quote-header'>Quote ID</span>
+               </th>
+               <th class='title-th'>
+                 <span class='quote-header'>Quote #</span>
+               </th>
+               <th class='title-th' id="quote-header-filepath">
+                 <span class="quote-header" >Filepath
+                   </span>
+                 </span>
+               </th>
+               <th class='date-th'>
+                 <span class='date'>Date Created</span>
+               </th>
+               <th>
+                 <button class='deleteQuote' onclick='deleteQuote("+quoteId+")'></button>
+               </th>
+             </tr>
+           </table>
+        </div>
+     </div>
+  </div>
+</body>
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/js/dashboard.js"></script>

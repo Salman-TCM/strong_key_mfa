@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StrongKey FIDO2 Tutorial App</title>
+  <link href="styles/fonts.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/styles/style.css">
+  <link rel="icon" type="image/png" href="/logo.png">
+</head>
+<body>
+  <div id="outerouter-ui">
+     <div id="outer-ui-reg" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 10px; background-color: #fff;  text-align: center; " >
+        <div id="ui">
+           <img src="/logo.png" width="90px">
+           <h3>Sign Up</h3>
+           <form id="regform">
+             <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -->
+              <!-- <br><br> -->
+              <!-- <input  class="input-out"  type="text" id="firstname" name="firstname"placeholder="First Name"><br> -->
+              <!-- <br><br> -->
+              <!-- <input  class="input-out"  type="text" id="lastname"  name="lastname"placeholder="Last Name"><br> -->
+              <br><br>
+              <input  class="input-out"  type="text" id="regusername" name="username"placeholder="Username"><br>
+              <span id="failed" style="display:none">Username already in use</span><br style="display:none" id="failedbreak">
+              <!-- <br><br> -->
+              <!-- <input class="input-out" type="text" id="displayname" name="displayname" placeholder="Display Name"> -->
+              <!-- BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB -->
+           </form>
+           <br>
+           <button id="regbutton" onclick="submitForm('registration')">Sign Up</button>
+           <!-- CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC -->
+           <a href="/login" id="cancel-button">Cancel</a>
+        </div>
+     </div>
+  </div>
+</body>
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<!-- DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD -->
+<script type="text/javascript" src="/js/functions.js"></script>

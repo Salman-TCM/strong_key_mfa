@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NTMC MFA</title>
+  <link href="styles/fonts.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/styles/style.css">
+  <link rel="icon" type="image/png" href="/logo.png">
+
+
+
+
+  
+</head>
+<body>
+  <div id="outerouter-ui">
+     <div id="outer-ui" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 10px; background-color: #fff;  text-align: center; " >
+        <div id="ui">
+           <img src="/logo.png" width="90px">
+           <h3>Sign In</h3>
+           <!-- EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE -->
+           <!-- Remove the action and method aspects of the form to remove the old
+           login post request. This will be replaced by a call to a
+           function in functions.js -->
+           <form id="loginform">
+             <!-- EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE -->
+              <br><br>
+              <input class="input-out" type="text" id="username"name="username"placeholder="Username" ><br><input style="display:none;">
+              <br><br>
+              <!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF -->
+              <!-- Delete the passcontainer and password input. They are no longer needed
+              thanks to FIDO2! -->
+              <!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF -->
+           </form>
+           <br>
+           <!-- GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG -->
+           <!-- Remove the type, form, and value from the button and add
+            onclick="submitForm('authentication')". This will call the function that will
+            be added to to login.js-->
+           <button onclick="submitForm('authentication')">Sign In</button>
+           <!-- GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG -->
+           <br>
+           <span id="span-sign-up">Don't have an account yet? </span><a href="/register" id="sign-up-button">Sign Up</a>
+        </div>
+     </div>
+  </div>
+</body>
+<script src="/js/jquery-3.3.1.min.js"></script>
+<!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
+<!-- Add common.js script. This JavaScript file contains functions used for
+encoding and decoding challenges and challenge responses.-->
+<script type="text/javascript" src="/js/common.js"></script>
+<!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
+<script type="text/javascript" src="/js/functions.js"></script>

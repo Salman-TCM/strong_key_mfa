@@ -1,0 +1,15 @@
+{
+  "lockfileVersion": 1,
+  "dependencies": {
+    "alert-node": "^2.1.4",
+    "bcrypt": "^3.0.8",
+    "crypto": "^1.0.1",
+    "dateformat": "^3.0.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "express-useragent": "^1.0.15",
+    "fs": "0.0.1-security",
+    "helmet": "^3.21.2",
+    "sqlite3": "^4.1.1"
+  }
+}
