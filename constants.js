@@ -5,7 +5,7 @@ const AUTHTYPE = "PASSWORD";
 const SVCUSERNAME = "svcfidouser";
 const SVCPASSWORD = "Abcd1234!";
 
-exports.SKFS_HOSTNAME = "";
+exports.SKFS_HOSTNAME = "technometrics.ddns.net";
 exports.SKFS_PORT="8181";
 exports.SVCINFO = {
      did: DID,
